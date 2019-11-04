@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//definisi route publik
+Route::get('/{any}', 'FrontController@index')->name('any', '.*');
+
+
